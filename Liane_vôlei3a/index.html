@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placar de Vôlei</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Placar de Vôlei</h1>
+
+    <div class="placar">
+      <div id="time1" class="time">
+        <h2 id="nomeTime1">Time A</h2>
+        <input type="text" id="inputTime1" placeholder="Nome do Time A" />
+        <button onclick="atualizarNome('time1')">Alterar Nome</button>
+        <p id="pontosTime1">0</p>
+        <div class="botoes">
+          <button onclick="incrementarPontos('time1')">+1</button>
+          <button onclick="diminuirPontos('time1')">-1</button>
+        </div>
+      </div>
+      <div id="separador">
+        <h2>:</h2>
+      </div>
+      <div id="time2" class="time">
+        <h2 id="nomeTime2">Time B</h2>
+        <input type="text" id="inputTime2" placeholder="Nome do Time B" />
+        <button onclick="atualizarNome('time2')">Alterar Nome</button>
+        <p id="pontosTime2">0</p>
+        <div class="botoes">
+          <button onclick="incrementarPontos('time2')">+1</button>
+          <button onclick="diminuirPontos('time2')">-1</button>
+        </div>
+      </div>
+    </div>
+
+    <button class="reiniciar" onclick="reiniciarJogo()">Reiniciar Jogo</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
